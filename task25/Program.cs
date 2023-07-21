@@ -14,11 +14,12 @@ int GetStepen(int osn, int pok)
     int i = 1;
     while (i <= pok)
     {
-        step *= osn
+        step *= osn;
+        i += 1;
     } 
-    return step
+    return step;
 }
-numberA = GetData("Введите основание степени: ");
-numberB = GetData("Введите показатель степени: ");
-stepen = GetStepen(numberA, numberB);
+int numberA = GetData("Введите основание степени: ");
+int numberB = GetData("Введите показатель степени: ");
+int stepen = GetStepen(numberA, numberB);
 Console.WriteLine($"При возведении числа {numberA} в натуральную степень {numberB} -> {stepen}");
